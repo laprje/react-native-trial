@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
+import { useColorScheme } from 'react-native-appearance'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -7,11 +8,44 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      
+    }
+  }
+  
+
+  componentDidMount() {
+    // let colorScheme = useColorScheme()
+    // if (colorScheme === 'dark') {
+    //   return(
+    //     <View style={styles.darkContainer}>
+    //     <Text style={styles.welcome}>Welcome to React Native!</Text>
+    //     <Text style={styles.instructions}>To get started, edit App.js</Text>
+    //     <Text style={styles.test}>TEST TEST TEST</Text>
+    //     <Text style={styles.instructions}>{instructions}</Text>
+    //   </View>
+    //   )
+    // } else {
+    //   return (
+    //     <View style={styles.lightContainer}>
+    //     <Text style={styles.welcome}>Welcome to React Native!</Text>
+    //     <Text style={styles.instructions}>To get started, edit App.js</Text>
+    //     <Text style={styles.test}>TEST TEST TEST</Text>
+    //     <Text style={styles.instructions}>{instructions}</Text>
+    //   </View>
+    //   )
+    // }
+  }
+  
   render() {
     return (
       <View style={styles.container}>
+        <div></div>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
+        <Text style={styles.test}>TEST TEST TEST</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
     );
@@ -35,4 +69,9 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  test: {
+    textAlign: 'center',
+    color: 'red',
+    marginBottom: 5
+  }
 });
