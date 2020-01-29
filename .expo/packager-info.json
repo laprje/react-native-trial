@@ -1,8 +1,8 @@
 {
   "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 12092,
+  "packagerPort": null,
+  "packagerPid": null,
   "expoServerNgrokUrl": "https://9q-dq2.laprje.nativetrial.exp.direct",
   "packagerNgrokUrl": "https://packager.9q-dq2.laprje.nativetrial.exp.direct",
   "ngrokPid": 2144
